@@ -14,5 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return '';
 });
+
+Route::get('comments/{time}', [App\Http\Controllers\greetingController::class, 'greet']);
+
+Route::get('comments/freeword/{msg}', function($msg) {
+    return view('freeword', ['msg' => $msg]);
+});
+
+//Route::get('comments/{random}', [App\Http\Controllers\greetingController::class, 'random']);
