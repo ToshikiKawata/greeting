@@ -8,6 +8,6 @@
 </head>
 <body>
     <h1>{{ $time }}</h1>
-    <h2>{{ $aisatsu }}</h2>
+    <h2>{{ $greeting }}</h2>
 </body>
 </html>
